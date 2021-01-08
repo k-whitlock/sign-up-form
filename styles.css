@@ -1,3 +1,16 @@
-body {
-    background: blue;
+html, body {
+    height: 100%;
+}
+
+/****** COLORS *****/
+.text-dark-grey {
+    color: #111827;
+}
+
+.text-light-grey {
+    color: #374151;
+}
+
+.font-medium {
+    font-weight: 500;
 }
