@@ -1,3 +1,7 @@
+*  {
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
 }
@@ -13,4 +17,25 @@ html, body {
 
 .font-medium {
     font-weight: 500;
+}
+
+
+.form-group i {
+    position: absolute;
+    top: 44%;
+    right: 4%;
+}
+
+.form-group small {
+    bottom: 0;
+    left: 3%;
+}
+
+.icon-success {
+    color: green;
+}
+
+.icon-error {
+    color: red;
+    
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign up form</title>
     <link rel="stylesheet"  href="styles.css">
+    <script defer src="script.js"></script>
     
 
     <!-- Font Awesome -->
@@ -16,7 +17,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link rel="icon" href="data:,">
 
     
 </head>
@@ -28,27 +28,43 @@
       <div class="contact-header text-center mb-5">
         <h1 class="text-dark-grey font-weight-bold">SIGN UP</h1>
       </div>
-        <form name="sign up" action="/" method="post" role="form">
+        <div id="error"></div>
+        <form id="form" name="form" action="/" method="post" role="form">
           <div class="form-row px-4">
             <div class="form-group col-12">
               <label class="mb-0 text-light-grey font-medium" for="name">Name*</label>
               <input type="text" id="name" name="name" class="form-control shadow-sm mb-4 mt-1" placeholder="John">
+              <i class="d-none fas fa-check-circle icon-success"></i>
+              <i class="d-none fas fa-exclamation-circle icon-error"></i>
+              <small id="nameError" class="position-absolute text-danger"></small>
             </div>
-            <div class="form-group col-12">
-              <label class="mb-0 text-light-grey font-medium" for="email">Email address*</label>
-              <input type="email" id="email" name="email" class="form-control shadow-sm mb-4 mt-1"  placeholder="name@example.com">
+
+            <div class="form-group col-12 ">
+              <label class="mb-0 text-light-grey font-medium" for="email">Email*</label>
+              <input type="email" id="email" name="email" class="form-control error-bg shadow-sm mb-4 mt-1" placeholder="name@example.com">
+              <i class="d-none fas fa-check-circle icon-success"></i>
+              <i class="d-none fas fa-exclamation-circle icon-error"></i>
+              <small class="d-none position-absolute">Error Message</small>
             </div>
+
             <div class="form-group col-12">
               <label class="mb-0 text-light-grey font-medium" for="password">Password*</label>
-              <input type="password" id="password" name="password" class="form-control shadow-sm mb-4 mt-1"  placeholder="Password">
+              <input type="password" id="password" name="password" class="form-control shadow-sm mb-4 mt-1" placeholder="Password">
+              <i class="d-none fas fa-check-circle icon-success"></i>
+              <i class="d-none fas fa-exclamation-circle icon-error"></i>
+              <small class="d-none position-absolute">Error Message</small>
             </div>
-            </div>
+
             <div class="form-group col-12">
               <label class="mb-0 text-light-grey font-medium" for="pwcheck">Password Confirmation*</label>
-              <input type="password" id="pwcheck" name="pwcheck" class="form-control shadow-sm mb-4 mt-1"  placeholder="Password Confirmation">
+              <input type="password" id="pwcheck" name="pwcheck" class="form-control shadow-sm mb-4 mt-1" placeholder="Password Confirmation">
+              <i class="d-none fas fa-check-circle icon-success"></i>
+              <i class="d-none fas fa-exclamation-circle icon-error"></i>
+              <small class="d-none position-absolute">Error Message</small>
             </div>
+
             <div class="form-group col-12">
-              <button type="submit" class="w-100 btn btn-primary font-weight-bolder">Sign Up</button>
+              <button type="submit" class="w-100 btn btn-primary rounded-pill font-weight-bolder">Sign Up</button>
             </div>
           </div>
         </form>
