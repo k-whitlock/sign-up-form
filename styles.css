@@ -1,9 +1,15 @@
 *  {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
     height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /****** COLORS *****/
@@ -29,7 +35,7 @@ html, body {
 
 /**** FONT *****/
 .font-medium {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .fs-36 {
@@ -45,9 +51,6 @@ html, body {
 .ls-tight {
     letter-spacing: -0.025em;
 }
-
-
-
 
 /****** GENERAL *****/
 .form-group i {

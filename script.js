@@ -12,11 +12,8 @@ const pwCheckError  = document.querySelector('#pwCheckError');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    validation();
-    
+    validation();   
 });
-
-
 
  function validation() {
     //name validation
@@ -34,8 +31,7 @@ form.addEventListener('submit', (e) => {
         //add default border
         fullName.classList.add('border-input');  
         //show empty message
-        nameError.textContent = '';
-        
+        nameError.textContent = '';  
     } 
     //email validation
     if (email.value.indexOf("@") == -1 || email.value.length < 6) {       
@@ -55,7 +51,6 @@ form.addEventListener('submit', (e) => {
         password.classList.add('border-error');
         pwError.textContent = 'Password must be at least 8 characters long';
 
-    
     } else if (password.value.length >= 20) {       
         password.classList.remove('border-input');
         password.classList.add('border-error');
@@ -75,8 +70,7 @@ form.addEventListener('submit', (e) => {
     } else {
         pwCheck.classList.remove('border-error');   
         pwCheck.classList.add('border-input');  
-        pwCheckError.textContent = '';
-        
+        pwCheckError.textContent = '';   
         }    
  }
 

@@ -4,74 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
-    <link rel="stylesheet"  href="styles.css">
-    <script defer src="script.js"></script>
-    
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!--CSS-->
+    <link rel="stylesheet"  href="styles.css">
 
-    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <script defer src="script.js"></script>
+ 
 </head>
 <body>
-
-
   <div class="container-fluid" style="max-width: 400px">
-    <div class="bg-light rounded  mx-auto mt-5 py-4"> 
+    <div class="bg-light rounded mx-auto mt-5 py-4"> 
       <div class="contact-header text-center mb-5">
         <h1 class="text-dark-grey font-weight-bold fs-36 ls-tight">SIGN UP FORM</h1>
         <p>all fields are required</p>
       </div>
-        
-        <form id="form" name="form">
-          <div class="form-row px-4">
-            <div class="form-group col-12">
-              <label class="mb-0 text-light-grey font-medium fs-14" for="name">Name</label>
-              <input type="text" id="name" name="name" class="control-form bg-white border-input shadow-sm mb-4 mt-1" placeholder="John">
-              <small id="nameError" class="position-absolute text-red"></small>
-            </div>
-
-            <div class="form-group col-12 ">
-              <label class="mb-0 text-light-grey font-medium fs-14" for="email">Email</label>
-              <input type="email" id="email" name="email" class="control-form bg-white border-input shadow-sm mb-4 mt-1" placeholder="name@example.com">
-              <small id="emailError" class="position-absolute text-red"></small>
-            </div>
-
-            <div class="form-group col-12">
-              <label class="mb-0 text-light-grey font-medium fs-14" for="password">Password</label>
-              <input type="password" id="password" name="password" class="control-form bg-white border-input shadow-sm mb-4 mt-1" placeholder="Password">
-              <small id="pwError" class="position-absolute text-red"></small>
-            </div>
-
-            <div class="form-group col-12">
-              <label class="mb-0 text-light-grey font-medium fs-14" for="pwCheck">Password Confirmation</label>
-              <input type="password" id="pwCheck" name="pwCheck" class="control-form bg-white border-input shadow-sm mb-4 mt-1" placeholder="Password Confirmation">
-              <small id="pwCheckError" class="position-absolute text-red"></small>
-            </div>
-
-            <div class="form-group col-12">
-              <button type="submit" class="w-100 btn btn-primary rounded-pill font-weight-bolder">Sign Up</button>
-            </div>
+      <form id="form" name="form">
+        <div class="form-row px-4">
+          <div class="form-group col-12">
+            <label class="mb-0 text-light-grey font-medium fs-14" for="name">Name</label>
+            <input type="text" id="name" name="name" class="control-form bg-white border-input shadow-sm mb-4 mt-1" placeholder="John">
+            <small id="nameError" class="position-absolute text-red"></small>
           </div>
-        </form>
-      
+
+          <div class="form-group col-12 ">
+            <label class="mb-0 text-light-grey font-medium fs-14" for="email">Email</label>
+            <input type="email" id="email" name="email" class="control-form bg-white border-input shadow-sm mb-4 mt-1" placeholder="name@example.com">
+            <small id="emailError" class="position-absolute text-red"></small>
+          </div>
+
+          <div class="form-group col-12">
+            <label class="mb-0 text-light-grey font-medium fs-14" for="password">Password</label>
+            <input type="password" id="password" name="password" class="control-form bg-white border-input shadow-sm mb-4 mt-1" placeholder="Password">
+            <small id="pwError" class="position-absolute text-red"></small>
+          </div>
+
+          <div class="form-group col-12">
+            <label class="mb-0 text-light-grey font-medium fs-14" for="pwCheck">Password Confirmation</label>
+            <input type="password" id="pwCheck" name="pwCheck" class="control-form bg-white border-input shadow-sm mb-4 mt-1" placeholder="Password Confirmation">
+            <small id="pwCheckError" class="position-absolute text-red"></small>
+          </div>
+
+          <div class="form-group col-12">
+            <button type="submit" class="w-100 btn btn-primary rounded-pill font-weight-bolder">Sign Up</button>
+          </div>
+        </div>
+      </form>  
     </div> 
   </div>
 
-
-
-
-
-
-
- 
  <!----- BOOTSTRAP JS -----> 
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
