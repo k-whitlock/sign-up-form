@@ -53,11 +53,11 @@ body {
 }
 
 /****** GENERAL *****/
-.form-group i {
+/* .form-group i {
     position: absolute;
     top: 44%;
     right: 4%;
-}
+} */
 
 .form-group small {
     bottom: 0;
